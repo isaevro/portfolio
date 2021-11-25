@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Portfolio Roman Isaev</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="main__body">
+	<!-- <div class="cursor"></div>
+	<div class="follower"></div> -->
+
+	<div class="overlay">
+		<header id="header">
+			<div class="container">
+				<!-- Navbar -->
+				<div class="menu">
+					<button class="nav-tgl" type="button" aria-label="toggle menu">
+						<span aria-hidden="true"></span>
+					</button>
+					<nav class="nav">
+						<div class="logo"> <a href="#header"> <img src="./img/logo.svg" alt="logo"> </a> </div>
+						<ul class="menu__list">
+							<li class="menu__list-item"><a href="#projects">Projects</a></li>
+							<li class="menu__list-item"><a href="#about">About</a></li>
+							<li class="menu__list-item"><a href="#reviews">Reviews</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+
+
+			<div class="container">
+				<div class="header">
+					<div class="header__item">
+						<h1 class="title elem-animation">Roman Isaev</h1>
+						<h2 class="subtitle elem-animation">Fullstack web developer</h2>
+						<div class="info elem-animation">
+							<div class="info__item">HTML 5</div>
+							<div class="info__item">CSS 3</div>
+							<div class="info__item">JavaScript</div>
+							<div class="info__item">Wordpress</div>
+							<div class="info__item">UI / UX Design</div>
+						</div>
+					</div>
+					<div class="header__item canvas__item">
+						<canvas id="canvasOne" width="550" height="550">
+							Your browser does not support HTML5 canvas.
+						</canvas>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<main>
+			<section class="section__projects" id="projects">
+				<div class="container">
+					<h4 class="section__subtitle">Projects</h4>
+					<h3 class="section__title">My portfolio projects</h3>
+					<div class="projects__inner">
+						<div class="project__item elem-animation">
+							<a href="./sites/icecream/index.html">
+								<img src="./img/Screenshot_28.png" alt="">
+							</a>
+						</div>
+						<div class="project__item elem-animation">
+							<a href="./sites/bitfast/index.html">
+								<img src="./img/Screenshot_1.png" alt="">
+							</a>
+						</div>
+						<div class="project__item elem-animation">
+							<a href="./sites/learnschool/index.html">
+								<img src="./img/Screenshot_2.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section__about" id="about">
+				<div class="container">
+					<h4 class="section__subtitle">About</h4>
+					<h3 class="section__title">Couple words about me</h3>
+
+					<div class="about__inner">
+
+
+						<div class="about__text">
+							<div class="about__main elem-animation">Hello, my name is Roman, I am a 26 years-old developer from
+								Russia. <br> <br> I'm
+								creating
+								from scratch custom websites,
+								Fixing and improving front end (landing pages, wordpress template and content).</div>
+
+							<div class="about__major elem-animation">My major skills are <span>HTML</span>, <span>CSS</span>,
+								<span>JS</span>,
+								<span>Wordpress</span> and a good sense of design and UX.
+							</div>
+
+							<ul class="about__exp elem-animation">
+								I have experience in:
+								<li>- React</li>
+								<li>- CSS preprocessors (Scss, Sass)</li>
+								<li>- PHP</li>
+								<li>- Web-development</li>
+								<li>- Landing pages</li>
+								<li>- jQuery</li>
+								<li>- Gulp</li>
+								<li>- Webpack</li>
+								<li>- Git</li>
+
+							</ul>
+							Feel free to contact me on Upwork.
+						</div>
+						<img src="./img/my_photo.png" alt="me" class="about__img">
+					</div>
+
+
+				</div>
+			</section>
+
+
+
+
+			<section class="section__reviews" id="reviews">
+				<div class="container">
+					<h4 class="section__subtitle">Reviews</h4>
+					<h3 class="section__title">What my clients say about me:</h3>
+					<div class="reviews">
+
+						<!-- Slider main container -->
+						<div class="swiper-container ">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="slide__img"><img src="./img/stars.svg" alt="img"></div>
+									<div class="slide__title">Vladimir P.</div>
+									<div class="slide__text">Thanks to Roman for doing everything efficiently on time and without
+										broaches. I recommend this specialist for work. Special thanks to Roman for the work that was not
+										included in the original.</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slide__img"><img src="./img/stars.svg" alt="img"></div>
+									<div class="slide__title">Morgan K.</div>
+									<div class="slide__text">Thank you very much for your work, the project was completed very quickly and
+										efficiently. I recommend it as a reliable performer! I will contact you in the future.</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slide__img"><img src="./img/stars.svg" alt="img"></div>
+									<div class="slide__title">Paul S.</div>
+									<div class="slide__text">The performer who specifically understands the task. Very cool and easy to
+										communicate. I did an excellent job, I will contact you. I advise everyone!</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<nav class="nav">
+					<div class="logo"> <a href="#header"> <img src="./img/logo.svg" alt="logo"> </a> </div>
+					<ul class="menu__list">
+						<li class="menu__list-item"><a href="#projects">Projects</a></li>
+						<li class="menu__list-item"><a href="#about">About</a></li>
+						<li class="menu__list-item"><a href="#reviews">Reviews</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+
+
+
+
+	<!-- Библиотеки, скрипты из CDN... -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Cкрипты (удалить все, кроме scripts.min.js перед билдом) -->
+
+	<script src="./js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,844 @@
+
+$black: #2C2C54;
+$white: #fff;
+$green: #33D9B2;
+$purple: #8C8CBA;
+$darkpurple: #706FD3;
+
+
+* 
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none
+  color: $black
+body
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400
+a
+	text-decoration: none;
+p
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+	color: $purple
+
+h2
+	font-family: 'Montserrat', sans-serif
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 74px;
+	text-transform: capitalize;
+	color: $black
+	max-width: 570px	
+
+.container 
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+.nav
+	display: flex
+	justify-content: space-between
+	margin-top: 36px
+	align-items: center
+.logo
+	width: 135px
+	height: 35px
+	&-img
+		margin-top: -2px
+	a
+		position: absolute
+		color: $black;
+		font-weight: 600;
+		font-size: 24px;
+		span
+			color: $green
+			transition: 0.5s
+			
+		img
+			position: relative
+	&-text
+		position: absolute
+		top: 5px
+		left: 38px
+		transition: 0.5s
+		&:hover
+			color: $green	
+			span
+				color: $black
+.nav-menu
+	&__links
+		display: flex
+		li + li
+			color: $black
+			display: block
+			margin-left: 20px
+			font-size: 16px
+		a:hover
+			color: $green	
+
+
+//subheader
+
+.subheader
+	padding-top: 112px
+	&__up-title
+		display: inline-block
+		font-size: 18px
+		border: 1px solid #E0DFF6
+		border-radius: 25px;
+		padding: 9px 30px 9px 60px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			background-image: url(../img/icons/cup.svg)
+			left: 25px
+			top: 6px
+			height: 24px
+			width: 24px
+	&__title
+		max-width: 635px;
+		max-height: 252px;
+		font-weight: bold;
+		font-size: 64px;
+		line-height: 84px;
+		text-transform: capitalize;
+		margin: 20px 0
+		@media ( max-width: 895px )
+			font-size: 45px
+			line-height: 60px
+			
+
+	&__subtitle
+		max-width: 635px;
+		height: 108px;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 36px;
+		color: $purple
+		margin-bottom: 35px
+	&__form
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			background-image: url(../img/icons/sms.svg)
+			left: 30px
+			top: 21px
+			height: 24px
+			width: 24px
+		input
+			padding: 20px 320px 20px 70px
+			border-radius: 97px
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: $black
+			outline: none
+			border: 1px solid #E0E0F6;
+			&::placeholder
+				color: $purple
+		button
+			color: $white
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			padding: 10px 25px
+			background-color: $green
+			border-radius: 48px;
+			border: none
+			cursor: pointer
+			transition: 0.3s all
+			margin-left: -150px
+			&:hover
+				color: $green
+				background-color: $purple
+header
+	height: 100%
+	background-image: url(../img/bg_header.png)
+	background-repeat: no-repeat
+	background-position: bottom right 170px
+	@media ( max-width: 1750px)
+		background-position: bottom right
+	@media ( max-width: 1300px)
+		background-position: bottom right -200px
+	@media ( max-width: 950px)
+		background-position: bottom right -400px
+	@media ( max-width: 700px)
+		background: none
+
+
+.benefits
+	margin-top: 110px
+	&__numbers
+		margin-top: 50px
+		display: flex
+
+		&-item
+			font-family: 'Montserrat', sans-serif
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			max-width: 159px
+			span
+				font-weight: bold;
+				font-size: 48px;
+				line-height: 59px;
+				color: $green
+				font-family: 'Montserrat', sans-serif
+	&__company
+		display: flex
+		justify-content: center
+		align-items: center
+		@media (max-width: 900px)
+			flex-wrap: wrap
+			
+		&-img
+			margin: 0 23px
+	&-main
+		display: flex
+		justify-content: space-between
+		margin-top: 110px
+		@media (max-width: 900px)
+			flex-direction: column
+			align-items: center
+			text-align: center
+			.benefits-main__right
+				margin: 30px 0 0 0 
+				
+			
+		&__right
+			align-self: center
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 36px;
+			color: $purple;
+			margin-left: 70px		
+
+.stick
+	height: 75px
+	width: 1px
+	background-color: $black
+	opacity: 0.1
+	margin: 10px 30px 0
+
+.cards
+	margin-top: 160px
+	&-title
+		margin: 0 auto
+		text-align: center
+		max-width: 628px
+	&-items
+		display: flex
+		justify-content: space-between
+	&-item
+		margin-top: 45px
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 371px;
+		height: 420px;
+		background: $white;
+		box-shadow: 0px 42px 215px rgba(0, 0, 0, 0.06);
+		border-radius: 12px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		transition: 0.4s all
+		&:nth-child(2n)
+			margin-top: 150px
+		&:hover
+			background: #706FD3;
+			p
+				color: $white;
+				opacity: 0.5;
+			h4
+				color: $white	
+		p
+			text-align: center
+			max-width: 300px
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 30px;
+			color: $purple
+			margin-top: 15px
+		h4
+			margin-top: 30px
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+		img
+			margin-right: -70px	
+
+.billing
+	margin-top: 150px
+	&__inner
+		display: flex
+		justify-content: space-between
+		&-left
+			display: flex
+			flex-wrap: wrap
+			min-width: 470px
+			justify-content: space-between
+		&-right
+			margin-left: 130px
+			p
+				margin-top: 25px
+			h2
+				margin-top: 85px		
+	&-invoice
+		margin-top: 40px
+		width: 215px
+		height: 170px
+		background: #FFFFFF;
+		box-shadow: 0px 42px 215px rgba(0, 0, 0, 0.06);
+		border-radius: 12px;
+		position: relative
+		transition: 0.4s all
+		&::after
+			content: ''
+			position: absolute
+			background-image: url(../img/icons/empty-wallet.svg)
+			left: 25px
+			top: 30px
+			height: 30px
+			width: 30px
+		&:hover
+			background: $green
+			.billing-invoice__text
+				color: $white
+				opacity: 0.7
+			.billing-invoice__price
+				color: $white	
+
+				
+		&-create
+			cursor: pointer
+			margin-top: 40px
+			width: 215px
+			height: 170px
+			background: #FFFFFF;
+			box-shadow: 0px 42px 215px rgba(0, 0, 0, 0.06);
+			border-radius: 12px;
+			position: relative
+			outline: 2px dashed #706FD3
+			transition: 0.5s all
+			&:hover
+				background: $purple
+				.billing-invoice__text
+					color: $white
+				.cross
+					transform: rotate(180deg)
+					stroke: $white
+			.cross
+				position: absolute
+				left: calc(50% - 9.5px)
+				bottom: 40px
+				stroke: #2C2C54
+				transition: stroke 0.3s, transform 0.5s
+			.billing-invoice__text
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				width: 126px
+				line-height: 26px;
+				text-align: center;
+				color: $black;
+				opacity: 1
+				top: 40px
+				left: 45px
+
+			
+
+		&__text
+			position: absolute
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #2C2C54;
+			opacity: 0.4;
+			left: 25px
+			top: 80px
+		&__price
+			position: absolute
+			font-family: Montserrat;
+			font-size: 24px;
+			line-height: 29px;
+			color: #2C2C54;
+			margin-left: 25px
+			font-weight: bold
+			top: 115px
+
+.improve
+	margin-top: 200px
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-left
+		max-width: 500px
+		h2
+			margin-top: -40px
+		p
+			margin-top: 30px
+	&-card
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 559px;
+		height: 142px;
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-sizing: border-box;
+		border-radius: 12px;
+		margin-bottom: 25px
+		transition: 0.3s
+		&:hover
+			background: $darkpurple
+			.improve-card__title
+				color: $white
+			p
+				color: $white
+				opacity: 0.5;
+			img
+				background: $purple		
+		&__title
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: capitalize;
+			margin-bottom: 8px
+		img
+			width: 68px;
+			height: 68px;
+			padding: 16px
+			background: $green
+			border-radius: 50%
+			margin: auto 30px
+
+
+
+.testimonials
+	margin-top: 200px
+	
+	.container
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 155px
+			height: 500px
+			background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 219.18%);
+			right: 0px
+			top: -30px
+	&__inner
+		display: flex
+	&-slider
+		min-width: 0
+		position: relative
+		.slick-arrow
+			position: absolute
+			left: -400px
+			bottom: 40px
+			font-size: 0
+			width: 74px
+			height: 74px
+			border: none
+		.slick-arrow.slick-prev
+			left: -450px
+			background: url(../img/icons/arrow-next.svg) 0 0 / 100% no-repeat
+			transition: 0.2s all
+			&:hover
+				background: url(../img/icons/arrow-next-hov.svg) 0 0 / 100% no-repeat
+
+		.slick-arrow.slick-next
+			left: -550px
+			background: url(../img/icons/arrow-prev.svg) 0 0 / 100% no-repeat
+			transition: 0.2s all
+			&:hover
+				background: url(../img/icons/arrow-prev-hov.svg) 0 0 / 100% no-repeat
+				
+	&-descr
+		margin-top: 10px
+		margin-right: 50px
+		min-width: 500px
+		p
+			margin-top: 20px	
+	&-card
+		max-width: 370px;
+		height: 432px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		background: #FFFFFF;
+		border-radius: 12px;
+		margin-left: 235px
+		&-title
+			display: flex
+			align-items: center
+
+			img
+				padding: 7px
+				border: $green solid 1px
+				border-radius: 50%
+				margin: 30px
+		&-who-name
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+		&-stick
+			height: 1px
+			width: 305px
+			background: #000
+			opacity: 0.1
+			margin-left: 32px
+		&-quote
+			margin: 25px 0 10px 25px
+		&-descr
+			width: 267px
+			margin: 0 auto
+
+
+.getstarted
+	margin-top: 100px
+	&-card
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		max-width: 1170px
+		height: 450px
+		background: url(../img/get_bg.png) 0 0 / 100% no-repeat
+		h2
+			color: $white
+			max-width: 800px
+			margin-top: 100px
+		p
+			max-width: 870px
+			color: #FFFFFF;
+			opacity: 0.5;
+			margin-top: 10px
+		a
+			color: $white
+			padding: 21px 46px
+			background-color: $green
+			border-radius: 12px;
+			margin-top: 40px
+			transition: 0.4s all
+			&:hover
+				color: $purple
+				background-color: $white
+
+
+.footer
+	margin-top: 130px
+	&-edge
+		max-width: 100%
+		padding-top: 90px
+		border-top: 1px solid #000000;
+		opacity: 0.1;
+	.logo
+		width: 280px
+	&__inner	
+		margin-bottom: 80px
+		display: flex
+		justify-content: space-between
+		position: relative
+		.copyright
+			position: absolute
+			left: 0px
+			bottom: -140px
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 27px;
+			color: #8C8CBA;
+			z-index: 1
+
+	&-logo-subtext
+		min-width: 280px
+		margin-top: 60px
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 36px;
+		color: #8C8CBA;
+	&-nav
+		ul
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			color: #2C2C54;
+			li
+				margin-top: 15px
+			a
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 27px;
+				color: #6A69A4;
+				&:hover
+					color: $green
+.footer-nav-inner
+	width: 70%
+	display: flex
+	justify-content: space-between
+.hamburger
+	display: none					
+				
+@media (max-width: 1150px)
+	.cards-items
+		flex-direction: column
+		align-items: center
+		.cards-item
+			margin-top: 20px
+	h2
+		font-size: 36px;
+		line-height: 54px;
+	.improve__inner
+		flex-direction: column
+		.improve-left
+			text-align: center
+			margin-bottom: 40px	
+	.testimonials .container::after
+		display: none
+	.testimonials
+		margin-top: 70px			
+	.testimonials__inner
+		display: block
+		.testimonials-descr
+			text-align: center
+			margin-right: 0
+			h2
+				margin: 0 auto
+			p
+				max-width: 600px
+				margin: 10px auto	40px
+		.testimonials-slider
+			margin: 0 auto
+			display: block
+			.testimonials-card
+				position: relative
+				display: block
+				margin: 0 auto
+			.slick-arrow
+				position: absolute
+				
+				bottom: -100px
+			.slick-arrow.slick-prev
+				left: calc(50% + 8px)
+			.slick-arrow.slick-next
+				left: calc(50% - 80px)
+	.benefits__company-img
+		margin-top: 20px	
+
+
+@media (max-width: 1000px)
+	.getstarted
+		margin-top: 150px
+	.billing__inner
+		flex-wrap: wrap
+		align-items: center
+		text-align: center
+		.billing__inner-right
+			align-items: center
+			margin-left: 0
+			h2
+				display: block
+				margin: 0 auto
+			p
+				padding: 0 50px	
+		.billing__inner-left
+			order: 1
+			display: grid
+			grid-template-columns:  1fr 1fr;
+			justify-items: center
+			min-width: none
+			width: 100%
+	.subheader__subtitle
+		font-size: 16px
+		max-height: 300px
+		max-width: 400px
+		margin-bottom: 60px
+	.footer__inner
+		display: block
+		.logo
+			margin: 20px auto
+			.logo-img
+				margin-top: -50px
+				margin-left: 80px
+			.footer-logo-subtext
+				text-align: center	
+
+		.footer-nav-inner
+			display: grid
+			grid-template-columns:  1fr 1fr;
+			justify-items: center
+			min-width: none
+			width: 100%
+			margin-top: 40px
+			ul
+				margin-top: 80px
+				text-align: center
+				
+		
+
+@media (max-width: 800px)
+	.footer__inner .copyright
+		font-size: 14px
+	.cards
+		margin-top: 70px
+	.improve
+		margin-top: 130px	
+	.getstarted-card
+		min-height: 250px
+		border-radius: 50px
+		height: 100% 
+		h2
+			margin-top: 40px
+		background: $darkpurple
+	.subheader__form
+		input
+			padding-right: 200px
+	.nav-menu
+		position: fixed
+		top: 0
+		right: -80%
+		width: 70%
+		height: 100vh
+		padding: 20px
+		background-color: rgba(0, 0, 0, 0.7)
+		z-index: 2
+		transition: 0.5s all
+	.nav-menu__links
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		height: 100vh
+		a
+			font-size: 20px
+			color: $white
+	.nav-menu__links li + li
+		margin: 0
+		margin-top: 20px
+	.nav-menu--active
+		right: 0	
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 45px
+		transform: translate(-50%)
+		width: 30px
+		height: 24px
+		z-index: 4
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: $black
+			margin-bottom: 6px
+			transition: 0.2s all
+		&--active
+			span
+				margin-bottom: -2px
+				background-color: $white
+				&:nth-child(1)
+					transform: translateY(6px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(6px) rotate(45deg)
+
+						
+
+
+
+
+@media (max-width: 600px)
+	h2
+		font-size: 28px;
+		line-height: 38px;
+	.subheader__title
+		font-size: 35px;
+		line-height: 47px;
+		text-align: center
+	.subheader__subtitle
+		text-align: center
+		height: 100%
+		width: 100%
+		max-width: 800px	
+		
+	p
+		font-size: 14px
+		line-height: 22px	
+	.subheader__form
+		input
+			padding-right: 120px
+			padding-left: 20px
+			width: 100%
+			position: relative
+			font-size: 14px
+	.subheader__form button
+		font-size: 12px
+		padding: 8px 15px
+		margin-left: 0
+		right: 10px
+		bottom: 13px
+		position: absolute
+	.benefits-main__right
+		font-size: 14px
+	.billing__inner .billing__inner-left
+		grid-template-columns: 1fr;
+	.testimonials__inner .testimonials-descr p
+		width: 100%
+	.testimonials__inner .testimonials-descr
+		min-width: 0
+	.billing__inner-left
+		min-width: 0
+	.benefits__numbers	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-item
+			margin-top: 20px
+	.stick
+		display: none
+	.testimonials-card-stick
+		display: none	
+	.testimonials-card-descr
+		width: 100%
+		padding: 10px 30px 20px	
+	.testimonials-card
+		height: 100%
+	.testimonials-card-quote
+		margin: 0 0 0 5px		
+
+@media (max-width: 400px)
+	p
+		line-height: 25px
+	.cards-item
+		width: 300px
+	.improve-card__title
+		font-size: 16px
+	.subheader__up-title
+		font-size: 14px
+	.improve-card img
+		margin: auto 20px		
+
+		
